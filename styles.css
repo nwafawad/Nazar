@@ -24,6 +24,27 @@ body {
     overflow-x: hidden;
 }
 
+/* RTL Support for Arabic */
+html[dir="rtl"] {
+    font-family: 'Cairo', sans-serif;
+}
+
+html[dir="rtl"] .logo h2,
+html[dir="rtl"] .hero-title,
+html[dir="rtl"] .section-title {
+    font-family: 'Cairo', sans-serif;
+}
+
+html[dir="rtl"] .nav-link::after {
+    right: 0;
+    left: auto;
+}
+
+html[dir="rtl"] .scroll-indicator span {
+    border-left: none;
+    border-right: 2px solid var(--white);
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -96,6 +117,23 @@ body {
 
 .nav-link:hover::after {
     width: 100%;
+}
+
+.lang-btn {
+    text-decoration: none;
+    color: var(--white);
+    background: var(--accent-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.lang-btn:hover {
+    background: #d35400;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(230, 126, 34, 0.3);
 }
 
 .hamburger {
