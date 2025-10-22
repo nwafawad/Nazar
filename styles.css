@@ -90,6 +90,9 @@ html[dir="rtl"] .scroll-indicator span {
     display: flex;
     list-style: none;
     gap: 2rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-link {
@@ -98,6 +101,7 @@ html[dir="rtl"] .scroll-indicator span {
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
+    display: inline-block;
 }
 
 .nav-link::after {
@@ -127,7 +131,10 @@ html[dir="rtl"] .scroll-indicator span {
     border-radius: 5px;
     font-weight: 600;
     transition: all 0.3s ease;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
 }
 
 .lang-btn:hover {
