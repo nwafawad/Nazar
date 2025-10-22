@@ -324,11 +324,274 @@ section {
     line-height: 1.8;
 }
 
+.about-highlight {
+    background: linear-gradient(135deg, rgba(44, 90, 160, 0.05), rgba(230, 126, 34, 0.05));
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-color);
+    margin: 1.5rem 0;
+}
+
+html[dir="rtl"] .about-highlight {
+    border-left: none;
+    border-right: 4px solid var(--accent-color);
+}
+
+.about-highlight h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.about-highlight ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-highlight li {
+    color: var(--text-light);
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+html[dir="rtl"] .about-highlight li {
+    padding-left: 0;
+    padding-right: 1.5rem;
+}
+
+.about-highlight li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+html[dir="rtl"] .about-highlight li::before {
+    left: auto;
+    right: 0;
+}
+
+.about-highlight strong {
+    color: var(--primary-color);
+}
+
+/* Mission and Vision */
+.mission-vision {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.mission-box,
+.vision-box {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-box:hover,
+.vision-box:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.mission-box {
+    border-top: 4px solid var(--primary-color);
+}
+
+.vision-box {
+    border-top: 4px solid var(--accent-color);
+}
+
+.mv-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mv-icon svg {
+    width: 30px;
+    height: 30px;
+    color: var(--white);
+}
+
+.mission-box h4,
+.vision-box h4 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.mission-box p,
+.vision-box p {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
 .about-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 2rem;
+}
+
+/* Field of Services Section */
+.field-of-services {
+    background: var(--bg-light);
+    padding: 80px 0;
+}
+
+.field-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.field-service-item {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: all 0.3s ease;
+    border-top: 3px solid transparent;
+}
+
+.field-service-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-top-color: var(--accent-color);
+}
+
+.field-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.field-service-item:hover .field-icon {
+    transform: rotateY(360deg);
+}
+
+.field-icon svg {
+    width: 35px;
+    height: 35px;
+    color: var(--white);
+}
+
+.field-service-item h3 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.field-service-item p {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Scope of Work Section */
+.scope-of-work {
+    padding: 80px 0;
+    background: var(--white);
+}
+
+.scope-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.scope-item {
+    position: relative;
+    background: linear-gradient(135deg, rgba(44, 90, 160, 0.02), rgba(230, 126, 34, 0.02));
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    border-left: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+html[dir="rtl"] .scope-item {
+    border-left: none;
+    border-right: 4px solid var(--primary-color);
+}
+
+.scope-item:hover {
+    transform: translateX(10px);
+    box-shadow: var(--shadow-lg);
+    border-left-color: var(--accent-color);
+}
+
+html[dir="rtl"] .scope-item:hover {
+    transform: translateX(-10px);
+    border-right-color: var(--accent-color);
+}
+
+.scope-number {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    opacity: 0.15;
+    line-height: 1;
+}
+
+html[dir="rtl"] .scope-number {
+    right: auto;
+    left: 20px;
+}
+
+.scope-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.scope-icon svg {
+    width: 30px;
+    height: 30px;
+    color: var(--white);
+}
+
+.scope-item h3 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.scope-item p {
+    color: var(--text-light);
+    line-height: 1.7;
+    font-size: 0.95rem;
 }
 
 .stat-item {
@@ -416,6 +679,141 @@ section {
 /* Projects Section */
 .projects {
     background: var(--bg-light);
+}
+
+.projects-table-wrapper {
+    overflow-x: auto;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: var(--shadow-lg);
+    padding: 2rem;
+}
+
+.projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Cairo', 'Poppins', sans-serif;
+}
+
+.projects-table thead {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+}
+
+.projects-table thead th {
+    padding: 1.2rem 1.5rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+}
+
+html[dir="rtl"] .projects-table thead th {
+    text-align: right;
+}
+
+.projects-table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+.projects-table tbody tr:hover {
+    background-color: rgba(44, 90, 160, 0.05);
+}
+
+.projects-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.projects-table tbody td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+html[dir="rtl"] .projects-table tbody td {
+    text-align: right;
+}
+
+.projects-table tbody td:first-child {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.projects-table tbody td:last-child {
+    color: var(--text-light);
+}
+
+/* Executive Team Section */
+.executive-team {
+    background: var(--white);
+    padding: 80px 0;
+}
+
+.team-table-wrapper {
+    overflow-x: auto;
+    background: var(--bg-light);
+    border-radius: 15px;
+    box-shadow: var(--shadow-lg);
+    padding: 2rem;
+}
+
+.team-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Cairo', 'Poppins', sans-serif;
+}
+
+.team-table thead {
+    background: linear-gradient(135deg, var(--accent-color), #d35400);
+    color: var(--white);
+}
+
+.team-table thead th {
+    padding: 1.2rem 1.5rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+}
+
+html[dir="rtl"] .team-table thead th {
+    text-align: right;
+}
+
+.team-table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+.team-table tbody tr:hover {
+    background-color: rgba(230, 126, 34, 0.05);
+}
+
+.team-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.team-table tbody td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+html[dir="rtl"] .team-table tbody td {
+    text-align: right;
+}
+
+.team-table tbody td:first-child {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.team-table tbody td:last-child {
+    color: var(--accent-color);
+    font-weight: 500;
 }
 
 .projects-grid {
@@ -648,6 +1046,163 @@ section {
     }
 }
 
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    padding: 120px 0 80px;
+    margin-top: 70px;
+    text-align: center;
+    color: var(--white);
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Services Detailed Page */
+.services-detailed {
+    padding: 80px 0;
+}
+
+.service-detail {
+    margin-bottom: 60px;
+    padding: 40px;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.service-detail.reverse {
+    background: var(--bg-light);
+}
+
+.service-detail.highlight-service {
+    background: linear-gradient(135deg, rgba(44, 90, 160, 0.03), rgba(230, 126, 34, 0.03));
+    border: 2px solid var(--accent-color);
+}
+
+.service-detail-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.service-detail-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.service-detail-icon svg {
+    width: 40px;
+    height: 40px;
+    color: var(--white);
+}
+
+.service-detail h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.service-detail p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.service-detail ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-detail li {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+html[dir="rtl"] .service-detail li {
+    padding-left: 0;
+    padding-right: 2rem;
+}
+
+.service-detail li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+html[dir="rtl"] .service-detail li::before {
+    content: '←';
+    left: auto;
+    right: 0;
+}
+
+.exclusive-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent-color), #d35400);
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.service-detail strong {
+    color: var(--primary-color);
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Active nav link */
+.nav-link.active {
+    color: var(--accent-color);
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hamburger {
@@ -691,6 +1246,38 @@ section {
         grid-template-columns: 1fr;
     }
 
+    .mission-vision {
+        grid-template-columns: 1fr;
+    }
+
+    .field-services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .scope-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-table-wrapper {
+        padding: 1rem;
+    }
+
+    .projects-table thead th,
+    .projects-table tbody td {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .team-table-wrapper {
+        padding: 1rem;
+    }
+
+    .team-table thead th,
+    .team-table tbody td {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+
     .services-grid,
     .projects-grid {
         grid-template-columns: 1fr;
@@ -698,6 +1285,26 @@ section {
 
     .footer-content {
         grid-template-columns: 1fr;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .service-detail {
+        padding: 30px 20px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .about-highlight li {
+        padding-left: 1.2rem;
+    }
+
+    html[dir="rtl"] .about-highlight li {
+        padding-right: 1.2rem;
     }
 }
 
@@ -713,5 +1320,47 @@ section {
     .btn {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
+    }
+
+    .page-header {
+        padding: 100px 0 60px;
+    }
+
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .service-detail h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .projects-table-wrapper {
+        padding: 0.5rem;
+    }
+
+    .projects-table {
+        font-size: 0.85rem;
+    }
+
+    .projects-table thead th,
+    .projects-table tbody td {
+        padding: 0.6rem 0.5rem;
+    }
+
+    .team-table-wrapper {
+        padding: 0.5rem;
+    }
+
+    .team-table {
+        font-size: 0.85rem;
+    }
+
+    .team-table thead th,
+    .team-table tbody td {
+        padding: 0.6rem 0.5rem;
     }
 }
