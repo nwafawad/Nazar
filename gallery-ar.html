@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض المشاريع - شلة للمقاولات</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index-ar.html" class="logo">
+                    <h2>شلة</h2>
+                    <div class="logo-subtitle">للمقاولات والكيماويات</div>
+                </a>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index-ar.html#home" class="nav-link">الرئيسية</a></li>
+                    <li><a href="index-ar.html#about" class="nav-link">عن شلة</a></li>
+                    <li><a href="index-ar.html#services" class="nav-link">خدماتنا</a></li>
+                    <li><a href="index-ar.html#projects" class="nav-link">مشاريعنا</a></li>
+                    <li><a href="gallery-ar.html" class="nav-link active">المعرض</a></li>
+                    <li><a href="index-ar.html#contact" class="nav-link">اتصل بنا</a></li>
+                    <li><a href="gallery.html" class="lang-btn">English</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>معرض مشاريعنا</h1>
+            <p>استكشف محفظة مشاريعنا المكتملة في مختلف القطاعات.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <!-- Gallery Filters -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="residential">سكني</button>
+                <button class="filter-btn" data-filter="commercial">تجاري</button>
+                <button class="filter-btn" data-filter="industrial">صناعي</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Residential Images -->
+                <div class="gallery-item" data-category="residential">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.12.49 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>مشروع سكني</h3>
+                        <p>بناء وتشييد</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="residential">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.13.10 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>فيلا حديثة</h3>
+                        <p>تصميم وبناء</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="residential">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.13.43 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>مجمع سكني</h3>
+                        <p>تطوير عقاري</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="residential">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.13.51 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>منزل خاص</h3>
+                        <p>ترميم وتجديد</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="residential">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.14.05 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>منزل فاخر</h3>
+                        <p>بناء</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="residential">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.14.16 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>وحدة سكنية</h3>
+                        <p>تشطيبات</p>
+                    </div>
+                </div>
+
+                <!-- Commercial Images -->
+                <div class="gallery-item" data-category="commercial">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.14.32 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>مبنى مكاتب</h3>
+                        <p>تجاري</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="commercial">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.14.40 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>مركز تسوق</h3>
+                        <p>بناء</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="commercial">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.14.56 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>مقر شركة</h3>
+                        <p>تصميم</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="commercial">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.15.02 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>مساحة تجارية</h3>
+                        <p>تجهيز</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="commercial">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.15.17 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>مجمع أعمال</h3>
+                        <p>تطوير</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="commercial">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.15.27 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>مشروع فندقي</h3>
+                        <p>ضيافة</p>
+                    </div>
+                </div>
+
+                <!-- Industrial Images -->
+                <div class="gallery-item" data-category="industrial">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.15.41 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>وحدة مصنع</h3>
+                        <p>صناعي</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="industrial">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.15.52 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>مستودع</h3>
+                        <p>تخزين</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="industrial">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.16.09 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>محطة معالجة</h3>
+                        <p>صناعي</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="industrial">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.16.22 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>مركز لوجستي</h3>
+                        <p>توزيع</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="industrial">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.16.34 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>منشأة تصنيع</h3>
+                        <p>إنتاج</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="industrial">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.16.46 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>مجمع صناعي</h3>
+                        <p>صناعة ثقيلة</p>
+                    </div>
+                </div>
+                <!-- More Images Mixed -->
+                <div class="gallery-item" data-category="residential">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.16.58 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>برج سكني</h3>
+                        <p>أبراج</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="commercial">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.17.19 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>بلازا تجارية</h3>
+                        <p>متعدد الاستخدامات</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="industrial">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.17.35 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>منشأة تخزين</h3>
+                        <p>صناعي</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="residential">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.17.46 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>شقة حديثة</h3>
+                        <p>سكني</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="commercial">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.17.58 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>مساحة مكتبية</h3>
+                        <p>داخلي</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="industrial">
+                    <img src="Gallery/Screenshot 2025-11-20 at 12.18.08 AM.png" alt="صورة المشروع">
+                    <div class="gallery-overlay">
+                        <h3>هيكل صناعي</h3>
+                        <p>هياكل</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>شلة</h2>
+                    <p>نبني المستقبل بتميز ونزاهة.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index-ar.html#home">الرئيسية</a></li>
+                        <li><a href="index-ar.html#about">عن شلة</a></li>
+                        <li><a href="index-ar.html#services">خدماتنا</a></li>
+                        <li><a href="index-ar.html#projects">مشاريعنا</a></li>
+                        <li><a href="index-ar.html#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>اتصل بنا</h3>
+                    <p>بورتسودان، السودان</p>
+                    <p>info@shilla-const.com</p>
+                    <p>+249 123 456 789</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 شلة للمقاولات. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Simple Gallery Filter Script
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 50);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
