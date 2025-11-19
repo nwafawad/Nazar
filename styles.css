@@ -316,7 +316,15 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    align-items: center;
+    align-items: start;
+}
+
+.about-text {
+    grid-column: 1;
+}
+
+.about-image {
+    grid-column: 2;
 }
 
 .about-text h3 {
@@ -332,11 +340,12 @@ section {
 }
 
 .about-highlight {
+    grid-column: 1;
     background: linear-gradient(135deg, rgba(44, 90, 160, 0.05), rgba(230, 126, 34, 0.05));
     padding: 1.5rem;
     border-radius: 10px;
     border-left: 4px solid var(--accent-color);
-    margin: 1.5rem 0;
+    margin: 0;
 }
 
 html[dir="rtl"] .about-highlight {
@@ -388,16 +397,17 @@ html[dir="rtl"] .about-highlight li::before {
 
 /* Mission and Vision */
 .mission-vision {
+    grid-column: 2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin: 2rem 0;
+    gap: 1.5rem;
+    margin: 0;
 }
 
 .mission-box,
 .vision-box {
     background: var(--white);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 15px;
     box-shadow: var(--shadow);
     text-align: center;
@@ -419,8 +429,8 @@ html[dir="rtl"] .about-highlight li::before {
 }
 
 .mv-icon {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin: 0 auto 1rem;
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     border-radius: 50%;
@@ -430,29 +440,31 @@ html[dir="rtl"] .about-highlight li::before {
 }
 
 .mv-icon svg {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     color: var(--white);
 }
 
 .mission-box h4,
 .vision-box h4 {
     color: var(--primary-color);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
 }
 
 .mission-box p,
 .vision-box p {
     color: var(--text-light);
-    line-height: 1.7;
+    line-height: 1.6;
+    font-size: 0.9rem;
 }
 
 .about-stats {
+    grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 /* Field of Services Section */
